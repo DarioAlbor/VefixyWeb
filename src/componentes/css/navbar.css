@@ -1,0 +1,25 @@
+/* src/componentes/css/navbar.css */
+
+.navbar {
+    margin-top: 80px;
+    height: 60px;
+    background-color: #3d3d3d;
+    border-radius: 50px;
+  }
+
+  /* Ajusta la animación del logo */
+  .navbar .navbar-brand img {
+    height: 50px;
+    transition: transform 0.5s;
+  }
+
+  .navbar .navbar-brand:hover img {
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+  }
+
+  /* Estilo para el botón "Soy Cliente" */
+  .soyClienteButton {
+    margin-right: 0px;
+    margin-top: -5px;
+  }
