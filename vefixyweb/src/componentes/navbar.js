@@ -19,7 +19,7 @@ import { FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
-
+import Logo from './ui/logo';
 import './css/navbar.css';
 
 const NAV_ITEMS = [
@@ -31,15 +31,15 @@ const NAV_ITEMS = [
     label: 'Productos',
     children: [
       {
-        label: 'Opción 1',
+        label: 'Marketing Digital',
         href: '#',
       },
       {
-        label: 'Opción 2',
+        label: 'Desarrollo',
         href: '#',
       },
       {
-        label: 'Opción 3',
+        label: 'Alojamiento',
         href: '#',
       },
     ],
@@ -49,26 +49,6 @@ const NAV_ITEMS = [
     href: '#',
   },
 ];
-
-const LogoWithHat = () => {
-  return (
-    <Box>
-      <Text
-        textAlign="center"
-        fontFamily="heading"
-        fontWeight="bold"
-        fontSize={{ base: 'xl', md: '2xl' }}
-        color="#FFA600"
-        display="inline-block"
-      >
-        Vefixy Network
-      </Text>{' '}
-      <Text fontSize="2xl" display="inline-block">
-        🎅
-      </Text>
-    </Box>
-  );
-};
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -109,7 +89,7 @@ const Navbar = () => {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <LogoWithHat />
+        <Logo />
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
